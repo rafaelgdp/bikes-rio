@@ -3,6 +3,9 @@
 
 import json, math, requests
 
+# Referências para este método:
+# https://en.wikipedia.org/wiki/Haversine_formula
+# https://stackoverflow.com/questions/639695/how-to-convert-latitude-or-longitude-to-meters
 def dist_pontos(p1, p2):
     R = 6378.137 # Raio da Terra em km
     dist_latitudinal = p2[0] * math.pi / 180 - p1[0] * math.pi / 180
